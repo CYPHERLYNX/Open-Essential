@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
-  <img src="assets/header-light.png" alt="Open Essential" width="900">
+  <img src="assets/header-light.png" alt="Open Essential" width="520">
 </picture><br>
   <img src="assets/badges/version.svg" alt="version: 1.5.0">
   <img src="assets/badges/android.svg" alt="install: Android 8.0+">
