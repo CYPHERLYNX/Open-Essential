@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Open Essential</string>
+    <string name="tile_label">Capture</string>
+    <string name="a11y_label">Open Essential buttons</string>
+    <string name="a11y_description">Lets the volume-down button open Open Essential and save what is on your screen. Press twice quickly to capture the screen, press and hold to record a voice note. A single press still lowers the volume. It also shows the optional floating capture button. It does not read the content of other apps; screen pictures are only taken when you trigger a capture.</string>
+    <string name="shortcut_note">New note</string>
+    <string name="shortcut_voice">Record voice</string>
+    <string name="shortcut_photo">Take photo</string>
+    <string name="shortcut_screen">Capture screen</string>
+    <string name="shortcut_search">Search space</string>
+</resources>

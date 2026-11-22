@@ -1,0 +1,220 @@
+{
+    "version":  1,
+    "app":  "Capture Space",
+    "original":  "com.nothing.ntessentialspace 2.2.0 (543)",
+    "values":  [
+                   {
+                       "name":  "trash_days",
+                       "value":  30,
+                       "source":  "original string: captures permanently deleted after 30 days",
+                       "group":  "storage"
+                   },
+                   {
+                       "name":  "min_audio_ms",
+                       "value":  2000,
+                       "estimated":  true,
+                       "source":  "original string says too-short audio is not summarised; threshold not visible",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "max_audio_bytes",
+                       "value":  18874368,
+                       "estimated":  true,
+                       "source":  "this app's size cap for a recording file; transcription also stops at 30 minutes (AudioDecode.to16kMono); original limit not visible",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "image_max_px",
+                       "value":  1600,
+                       "estimated":  true,
+                       "group":  "capture"
+                   },
+                   {
+                       "name":  "double_press_ms",
+                       "value":  350,
+                       "estimated":  true,
+                       "group":  "controls"
+                   },
+                   {
+                       "name":  "hold_ms",
+                       "value":  600,
+                       "estimated":  true,
+                       "group":  "controls"
+                   },
+                   {
+                       "name":  "volume_repeat_ms",
+                       "value":  120,
+                       "estimated":  true,
+                       "group":  "controls"
+                   },
+                   {
+                       "name":  "screenshot_delay_ms",
+                       "value":  450,
+                       "estimated":  true,
+                       "group":  "controls"
+                   },
+                   {
+                       "name":  "related_min_similarity",
+                       "value":  0.62,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "suggest_add_min_similarity",
+                       "value":  0.72,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "suggest_create_min_similarity",
+                       "value":  0.72,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "suggest_create_min_count",
+                       "value":  2,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "search_min_similarity",
+                       "value":  0.5,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "smart_collection_min_similarity",
+                       "value":  0.55,
+                       "estimated":  true,
+                       "group":  "organisation"
+                   },
+                   {
+                       "name":  "reminder_lead_minutes_default",
+                       "value":  10,
+                       "estimated":  true,
+                       "group":  "reminders"
+                   },
+                   {
+                       "name":  "analysis_model",
+                       "value":  "Qwen3.5-0.8B-Q4_K_M.gguf",
+                       "source":  "owner's choice (build brief v6): on-device Qwen3.5-0.8B with mmproj-F16.gguf via llama.cpp v1.0.0; original model is chosen by its server",
+                       "group":  "ai"
+                   },
+                   {
+                       "name":  "speech_model",
+                       "value":  "ggml-small-q5_1.bin",
+                       "source":  "owner's choice (build brief v6): on-device Whisper small via whisper.cpp v1.9.5; original transcribes on its server",
+                       "group":  "ai"
+                   },
+                   {
+                       "name":  "embedding_dimensions",
+                       "value":  768,
+                       "estimated":  true,
+                       "group":  "ai"
+                   },
+                   {
+                       "name":  "recording",
+                       "value":  "AAC 44.1 kHz 96 kbps",
+                       "estimated":  true,
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_sample_rate_hz",
+                       "value":  16000,
+                       "source":  "Lcom/nothing/ai/service/engine/util/AdaptiveVad$Options;-\u003e\u003cinit\u003e(IIIFIFIILkotlin/jvm/internal/DefaultConstructorMarker;)V classes6.dex",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_frame_ms",
+                       "value":  20,
+                       "source":  "AdaptiveVad$Options default constructor",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_max_analyze_ms",
+                       "value":  10000,
+                       "source":  "AdaptiveVad$Options default constructor",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_min_speech_dbfs",
+                       "value":  -50.0,
+                       "source":  "AdaptiveVad$Options default constructor (0xc2480000)",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_min_speech_ms",
+                       "value":  200,
+                       "source":  "AdaptiveVad$Options default constructor",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_zcr_min",
+                       "value":  0.03,
+                       "source":  "AdaptiveVad$Options default constructor (0x3cf5c28f)",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_gap_forgiveness_ms",
+                       "value":  60,
+                       "source":  "AdaptiveVad$Options default constructor",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_silence_dbfs",
+                       "value":  -120.0,
+                       "source":  "AdaptiveVad;-\u003eframeDbfs (rms \u003c= 1e-12)",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "vad_rule",
+                       "value":  "speech when a run of frames with dbfs\u003e=-50 and zcr\u003e=0.03 (gaps up to 60 ms forgiven) reaches 200 ms",
+                       "source":  "AdaptiveVad;-\u003edetect([F...Options;)...Result;",
+                       "group":  "voice"
+                   },
+                   {
+                       "name":  "key_moment_window_ms",
+                       "value":  30000,
+                       "source":  "Flip2RecordEngine;-\u003egetTranscriptsAtKeyTimestamps @0x010d-0x0148 (0x7530); overlapping windows merged",
+                       "group":  "voice"
+                   }
+               ],
+    "colors":  [
+                   {
+                       "name":  "accent_red",
+                       "value":  "#D71921",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "yellow",
+                       "value":  "#FFC700",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "hint_background",
+                       "value":  "#19FFC700",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "input_bar",
+                       "value":  "#323232",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "input_text",
+                       "value":  "#F2F2F2",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "text_dark",
+                       "value":  "#1C1C1C",
+                       "source":  "original resource table"
+                   },
+                   {
+                       "name":  "link_blue",
+                       "value":  "#4C94EB",
+                       "source":  "original resource table"
+                   }
+               ]
+}

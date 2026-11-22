@@ -1,0 +1,29 @@
+# Local secrets and workstation configuration
+local.properties
+keystore.properties
+*.jks
+*.keystore
+.env
+.env.*
+*.pem
+*.key
+
+# Build output and caches
+.gradle/
+.kotlin/
+**/build/
+**/.cxx/
+.idea/
+*.iml
+
+# Downloaded models and engine source trees
+*.gguf
+*.bin
+/third_party/llama.cpp/
+/third_party/whisper.cpp/
+
+# Local captures and release binaries
+captures/
+shots/
+*.apk
+*.aab

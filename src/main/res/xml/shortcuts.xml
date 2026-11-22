@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="screen"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_screen">
+        <intent
+            android:action="com.craft.capturespace.action.CAPTURE"
+            android:targetPackage="com.craft.capturespace"
+            android:targetClass="com.craft.capturespace.capture.CaptureActivity">
+            <extra android:name="mode" android:value="screenshot" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="photo"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_photo">
+        <intent
+            android:action="com.craft.capturespace.action.CAPTURE"
+            android:targetPackage="com.craft.capturespace"
+            android:targetClass="com.craft.capturespace.capture.CaptureActivity">
+            <extra android:name="mode" android:value="photo" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="voice"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_voice">
+        <intent
+            android:action="com.craft.capturespace.action.CAPTURE"
+            android:targetPackage="com.craft.capturespace"
+            android:targetClass="com.craft.capturespace.capture.CaptureActivity">
+            <extra android:name="mode" android:value="voice" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="note"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_note">
+        <intent
+            android:action="com.craft.capturespace.action.CAPTURE"
+            android:targetPackage="com.craft.capturespace"
+            android:targetClass="com.craft.capturespace.capture.CaptureActivity">
+            <extra android:name="mode" android:value="note" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="search"
+        android:enabled="true"
+        android:icon="@drawable/ic_tile"
+        android:shortcutShortLabel="@string/shortcut_search">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.craft.capturespace"
+            android:targetClass="com.craft.capturespace.ui.MainActivity">
+            <extra android:name="open" android:value="search" />
+        </intent>
+    </shortcut>
+</shortcuts>
