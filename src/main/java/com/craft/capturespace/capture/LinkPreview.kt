@@ -190,7 +190,7 @@ object LinkPreview {
         } finally { c.disconnect() }
     }
 
-    // ---------- shared AI chats (ChatGPT, Claude, Grok, Gemini) ----------
+    // ---------- shared AI chat links ----------
 
     /** The assistant's name for a public shared-chat link, or null. */
     internal fun aiChat(url: String): String? {
@@ -217,8 +217,8 @@ object LinkPreview {
         val title = p.title?.trim()?.removePrefix("‎")?.replace(Regex("""(?i)^(chatgpt|claude|grok|gemini)\s*[-–|:]\s*"""), "")?.trim()
             ?.takeIf { it.isNotEmpty() && !aiBoilerplate.containsMatchIn(it) }
         val desc = p.description?.trim()?.takeIf { it.isNotEmpty() && !aiBoilerplate.containsMatchIn(it) }
-        // ChatGPT and Grok draw a picture of each shared chat (its first messages); Claude and
-        // Gemini only show their logo, which says nothing about this chat.
+        // Some providers draw a picture of the shared chat's first messages; others
+        // only show their logo, which says nothing about this chat.
         val img = p.image?.takeIf { title != null || desc != null || name == "ChatGPT" || name == "Grok" }
         if (img == null) p.image?.let { java.io.File(it).delete() }
         // No real title: left empty, so the notes (read from the picture) or "Shared … chat" name it.
